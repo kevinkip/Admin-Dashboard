@@ -13,7 +13,9 @@
 .container{
     display: grid;
     grid-template-columns: 1fr 4fr;
+    grid-template-rows: repeat(3, 1fr);
     gap: 4px;
+    margin: 5px;
 }
 
 .header{
@@ -22,18 +24,63 @@
     grid-template-rows: repeat(2, 1fr);
 }
 
-.top{
-    display: inline-grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+.sidebar{
+    display: grid;
     justify-content: center;
     align-items: center;
+    grid-column: 1/2;
+    grid-row: 1/4;
+    grid-template-rows: repeat(6, 1fr);
+    margin: 1em;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./views/charlesdeluvio-Mv9hjnEUHR4-unsplash.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.picture{
+    display: flex;
+    justify-content: center;
+}
+
+.side-content{
+    display: grid;
+    justify-content: center;
+}
+
+.top{
+    display: inline-grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    gap: 20px;
+    justify-content: right;
+    align-items: center;
+    height: fit-content;
+}
+
+.fa{
+    padding: 8px;
+    margin: 0;
+}
+
+.fa:hover{
+    cursor: pointer;
 }
 
 .notifications{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .profile-picture{
@@ -75,7 +122,7 @@
 }
 .search-bar {
   margin: auto;
-  padding: 1.5em;
+  padding: 0.5em;
   justify-content: right;
   max-width: 30em;
 }
