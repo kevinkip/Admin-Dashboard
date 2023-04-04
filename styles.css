@@ -247,18 +247,20 @@ div h1{
   align-items: center;
 }
 
-.fa{
-    padding: 8px;
-    margin: 0;
+.fa-solid{
+  padding: 10px;
+  font-size: 25px;
 }
 
 .notification-button{
   display: flex;
-  /* width: 20px; */
   height: auto;
+  width: 5%;
+  justify-content: center;
+  align-items: center;
 }
 
-.fa:hover{
+.fa-solid:hover{
   cursor: pointer;
 }
 
@@ -314,7 +316,7 @@ div h1{
   outline: transparent;
 }
 .search-bar {
-  margin: auto;
+  margin: 0.5rem;
   padding: 0.5em;
   justify-content: right;
   max-width: 30em;
